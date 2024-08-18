@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+& .slick-list {
+    margin: 0 -7px;
+
+    & .slick-slide>div {
+        padding: 0 10px;
+    }
+}
+
+.main-container {
+    background: rgb(7, 1, 55);
+    background: radial-gradient(circle, rgb(9 5 38) 0%, rgb(0 0 0 / 97%) 50%);
+}
+
+.main {
+    margin: 0px auto;
+    width: 580px;
+    height: 580px;
+    position: relative;
+}
+
+.big-circle {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 2px solid #0300dd;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    animation: Rotate 20s linear infinite;
+    -webkit-animation: Rotate 20s linear infinite;
+}
+
+.icon-block {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-image: linear-gradient(180deg, #040f40 0%, #010414 100%);
+    -webkit-background-image: linear-gradient(180deg, #040f40 0%, #010414 100%);
+    box-shadow: 0 0px 2px 0 #fff;
+    -webkit-box-shadow: 0 0px 2px 0 #fff;
+}
+
+.icon-block img {
+    margin: 0px auto;
+    width: 86%;
+    animation: Rotate-reverse 20s linear infinite;
+    -webkit-animation: Rotate-reverse 20s linear infinite;
+}
+
+.icon-block:first-child {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.icon-block:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+}
+
+.icon-block:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+}
+
+.icon-block:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+/* circle content */
+.circle {
+    animation: circle-rotate 20s linear infinite;
+    -webkit-animation: circle-rotate 20s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    width: 68%;
+    height: 68%;
+    border: 2px solid #0300dd;
+    border-radius: 50%;
+}
+
+.circle .icon-block img {
+    animation: img-rotate 20s linear infinite;
+    -webkit-animation: img-rotate 20s linear infinite;
+}
+
+/* center logo */
+.center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.center-logo img {
+    max-width: 200px;
+}
+
+/* keyframe animation */
+
+@keyframes Rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes Rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes Rotate-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes Rotate-reverse {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes circle-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(405deg);
+    }
+}
+
+@-webkit-keyframes circle-rotate {
+    from {
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    to {
+        -webkit-transform: translate(-50%, -50%) rotate(405deg);
+    }
+}
+
+@keyframes img-rotate {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(-405deg);
+    }
+}
+
+@-webkit-keyframes img-rotate {
+    from {
+        -webkit-transform: rotate(-45deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-405deg);
+    }
+}
+
+.security::after {
+    content: "";
+    position: absolute;
+    background: url("../../public/images/sales.png") no-repeat right;
+    width: 200px;
+    height: 100%;
+    right: -38px;
+    filter: opacity(0.1);
+    z-index: 0;
+    transform: rotate(-30deg) scale(2.3);
+    bottom: 0;
+}
+
+.accordion:has(input:checked) {
+    background-color:#d9dffb;
+}
+
+.accordion:has(input:checked) .number{
+    color: #000;
+}
+
+.accordion__content{
+    max-height: 0em;
+    transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  }
+  input[name='panel']:checked ~ .accordion__content {
+    /* Get this as close to what height you expect */
+    max-height: 50em;
+  }
+  .banner {
+    background-color: #FFFCF5;
+  }
+  .banner:after {
+    background: radial-gradient(circle, rgba(151, 151, 151, 0.5) 40%, rgba(151, 151, 151, 1) 75%), url(https://www.vhv.rs/dpng/f/11-110897_thin-plus-sign-transparent-hd-png-download.png) repeat 0 / 130px;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+  }
