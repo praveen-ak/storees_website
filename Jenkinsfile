@@ -69,7 +69,7 @@ pipeline {
                 script {
                     // Deploy the application to Cloud Run
                     sh """
-                        gcloud run deploy moq-frontend \
+                        gcloud run deploy customer-frontend \
                         --image ${ARTIFACT_REGISTRY} \
                         --platform managed \
                         --region ${REGION} \
