@@ -6,8 +6,8 @@ pipeline {
     environment {
         PROJECT_ID = 'storeesmvp'
         REGION = 'asia-southeast1'
-        IMAGE_NAME = 'storees-customer-frontend-app'
-        REPO_NAME = 'storees-customer-frontend-repo'
+        IMAGE_NAME = 'test-storees-customer-frontend-app'
+        REPO_NAME = 'test-storees-customer-frontend-repo'
         ARTIFACT_REGISTRY = "${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO_NAME}/${IMAGE_NAME}"
         WEBHOOK_URL = "https://chat.googleapis.com/v1/spaces/AAAAE-enmUM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Ph1Py0hgUh8mBe2d5b0a4PZfHYNxSnBDzxdMY98tZ-M"
     }
@@ -69,7 +69,7 @@ pipeline {
                 script {
                     // Deploy the application to Cloud Run
                     sh """
-                        gcloud run deploy customer-frontend \
+                        gcloud run deploy test-customer-frontend \
                         --image ${ARTIFACT_REGISTRY} \
                         --platform managed \
                         --region ${REGION} \
