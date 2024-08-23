@@ -5,7 +5,7 @@ pipeline {
 
     environment {
         PROJECT_ID = 'storeesmvp'
-        REGION = 'asia-southeast1'
+        REGION = 'us-central1'
         IMAGE_NAME = 'test-storees-customer-frontend-app'
         REPO_NAME = 'test-storees-customer-frontend-repo'
         ARTIFACT_REGISTRY = "${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPO_NAME}/${IMAGE_NAME}"
