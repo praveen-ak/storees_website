@@ -8,24 +8,30 @@ export default function Accelerate() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
-        centerMode: true,
+        slidesToShow: 4,
         centerPadding: "100px",
         swipeToSlide: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
+                    centerMode: true
                 },
             },
             {
-                breakpoint: 500,
+                breakpoint: 1300,
                 settings: {
-                    slidesToShow: 1,
-                    centerMode: false
+                    slidesToShow: 2,
+                    centerMode: true
                 },
             },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                },
+            }
         ],
     };
     return (
@@ -44,7 +50,7 @@ export default function Accelerate() {
                                     <p className="text-xl mb-4 font-bold">Offline Sale</p>
                                     <p className="text-md mb-8">Capture your offline sale data and link it with the customer with our omni channel POS Application</p>
                                 </div>
-                                <img src="../images/accelarate.png" alt="" />
+                                <img src="../images/accelarate.png" alt="" className="mx-auto" />
                             </div>
                         </div>
                     ))}

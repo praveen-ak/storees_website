@@ -8,8 +8,8 @@ export const leftNavItems = [
         name: "Benefits",
     },
     {
-        path: "/services",
-        name: "Services",
+        path: "/blog",
+        name: "Blog",
     },
     {
         path: "/pricing",
@@ -17,7 +17,7 @@ export const leftNavItems = [
     },
     {
         path: "/faq",
-        name: "Faq",
+        name: "FAQ",
     },
 ];
 

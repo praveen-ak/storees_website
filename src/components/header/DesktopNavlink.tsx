@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 export default function DesktopNavlink() {
     const pathName = usePathname()
     return (
-        <div className="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+        <div className="w-full block font-outfit flex-grow sm:flex sm:items-center sm:w-auto">
             <div className="text-sm sm:flex-grow">
                 {leftNavItems.map((item, index) => {
                     const isActive = item.path === pathName;
@@ -24,7 +24,7 @@ export default function DesktopNavlink() {
                         const isLinkActive = item.path === pathName
                         return (
                             <Link href={item.path} key={item.path} 
-                                className="transition hover:bg-gradient-to-r from-blue-500 to-indigo-500 inline-block text-sm px-4 py-2 rounded bg-gray-300 text-gray-700 hover:text-white mr-4">
+                                className="transition hover:bg-gradient-to-r from-blue-500 to-indigo-500 inline-block text-sm px-4 py-2 rounded bg-gray-300 text-black font-medium hover:text-white mr-4">
                                     <span>{item.name}</span>
                                 </Link>
                         )
