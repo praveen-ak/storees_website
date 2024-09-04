@@ -86,7 +86,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bottom-footer w-full bg-blue-900 py-6 sticky bottom-0">
+            <div className="bottom-footer w-full bg-[#04107E] py-6 sticky bottom-0">
                 <div className="container max-w-5xl mx-auto">
                     <div className="grid grid-cols-2 gap-5 pb-8 items-center border-b-slate-600 border-b">
                         <div className="max-w-sm text-white">

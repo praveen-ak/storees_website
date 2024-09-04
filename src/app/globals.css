@@ -246,3 +246,30 @@
     height: 100%;
     opacity: 0.05;
   }
+  .logo_section {
+    width: 9rem;
+  }
+  .scrolled .logo_section {
+    width: 3rem;
+  }
+  .scrolled .logo {
+    transform: translateX(-125%);
+    transition-delay: 0s;
+    visibility: hidden;
+  }
+  .logo {
+    transform: translateX(0);
+    transition-delay: .125s;
+    transition:all ease 0.3s
+  }
+  .logo_sm {
+    transform: translateX(-125%);
+    transition-delay: 0s;
+    visibility: hidden;
+    transition:all ease 0.3s
+  }
+  .scrolled .logo_sm {
+    transform: translateX(0);
+    transition-delay: .25s;
+    visibility: visible;
+  }

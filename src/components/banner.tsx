@@ -1,9 +1,26 @@
+import React from 'react';
+import TextTransition, { presets } from 'react-text-transition';
+
+const TEXTS = ['Ecommerce', 'Marketing', 'Executives'];
+
 export default function Banner() {
+    const [index, setIndex] = React.useState(0);
+
+    React.useEffect(() => {
+        const intervalId = setInterval(
+            () => setIndex((index) => index + 1),
+            3000, // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
     return (
         <main className="banner relative md:pt-20">
             <div className="container max-w-6xl pt-20 font-outfit relative z-10">
                 <div className="max-w-3xl mx-auto text-center pb-36">
-                    <h1 className="sm:text-6xl text-5xl font-bold mb-6">Supercharged <span className="text-blue-700">ECommerce </span>
+                    <h1 className="sm:text-6xl text-5xl font-bold mb-6">Supercharged 
+                        <span>
+                            <TextTransition className='!inline-flex mx-2 text-blue-700' springConfig={presets.gentle}> {TEXTS[index % TEXTS.length]} </TextTransition>
+                        </span>
                         For Smarter sales strategy.</h1>
                     <p className="text-xl mb-6">Create seamless eCommerce journeys that excite your customers without of the box
                         retention & Marketing Solutions that work together.
