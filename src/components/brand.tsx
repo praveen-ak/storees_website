@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Transition from "./transition";
 
 export default function Brand() {
     const brand = [
@@ -34,12 +35,14 @@ export default function Brand() {
     ];
     return (
         <div className="container-fluid bg-zinc-100 pb-20">
-            <Marquee speed={50} autoFill={true} pauseOnHover={true} gradientColor='#f4f4f5' gradient={true} gradientWidth={200}>
-                {brand.map((item, index) => {
-                    return (
-                        <img key={index} src={item.src} alt={item.name} className="h-[50px] mx-10" />
-                    )
-                })}
-            </Marquee>
+            <Transition>
+                <Marquee speed={50} autoFill={true} pauseOnHover={true} gradientColor='#f4f4f5' gradient={true} gradientWidth={200}>
+                    {brand.map((item, index) => {
+                        return (
+                            <img key={index} src={item.src} alt={item.name} className="h-[50px] mx-10" />
+                        )
+                    })}
+                </Marquee>
+            </Transition>
         </div>)
 }
