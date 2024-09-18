@@ -219,25 +219,33 @@
 }
 
 .accordion:has(input:checked) {
-    background-color:#d9dffb;
+    background-color: #d9dffb;
 }
 
-.accordion:has(input:checked) .number{
+.accordion:has(input:checked) .number {
     color: #000;
 }
 
-.accordion__content{
+.accordion__content {
     max-height: 0em;
     transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
-  }
-  input[name='panel']:checked ~ .accordion__content {
+}
+
+input[name='panel']:checked~.accordion__content {
     /* Get this as close to what height you expect */
     max-height: 50em;
-  }
-  .banner {
-    background-color: #FFFCF5;
-  }
-  .banner:after {
+}
+
+.banner {
+    background: #FFFCF5;
+}
+
+@media screen and (min-width: 1280px) {
+    .banner {
+        background: #FFFCF5 url("../../public/images/chart.png") no-repeat right;
+    }
+}
+.banner:after {
     background: radial-gradient(circle, rgba(151, 151, 151, 0.5) 40%, rgba(151, 151, 151, 1) 75%), url(https://www.vhv.rs/dpng/f/11-110897_thin-plus-sign-transparent-hd-png-download.png) repeat 0 / 130px;
     content: "";
     position: absolute;
@@ -245,31 +253,37 @@
     width: 100%;
     height: 100%;
     opacity: 0.05;
-  }
-  .logo_section {
+}
+
+.logo_section {
     width: 9rem;
-  }
-  .scrolled .logo_section {
+}
+
+.scrolled .logo_section {
     width: 3rem;
-  }
-  .scrolled .logo {
+}
+
+.scrolled .logo {
     transform: translateX(-125%);
     transition-delay: 0s;
     visibility: hidden;
-  }
-  .logo {
+}
+
+.logo {
     transform: translateX(0);
     transition-delay: .125s;
-    transition:all ease 0.3s
-  }
-  .logo_sm {
+    transition: all ease 0.3s
+}
+
+.logo_sm {
     transform: translateX(-125%);
     transition-delay: 0s;
     visibility: hidden;
-    transition:all ease 0.3s
-  }
-  .scrolled .logo_sm {
+    transition: all ease 0.3s
+}
+
+.scrolled .logo_sm {
     transform: translateX(0);
     transition-delay: .25s;
     visibility: visible;
-  }
+}
