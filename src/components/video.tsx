@@ -29,9 +29,9 @@ export default function Video() {
         setisplay(!isplay)
     }
     return (
-        <main className="bg-gradient-to-b from-[#faf8f0] from-50% to-zinc-100 to-15%">
+        <main className="bg-[#FFFCF5]">
             <Transition>
-                <div className="container max-w-5xl py-20">
+                <div className="container max-w-5xl pb-20">
                     <div className="relative" onMouseEnter={(e) => onHover(e)}
                         onMouseLeave={(e) => onHoverOver(e)}>
                         <video ref={videoRef} src={videosrc} className="rounded-2xl" onEnded={videoDone} />

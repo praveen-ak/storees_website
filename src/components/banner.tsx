@@ -18,7 +18,7 @@ export default function Banner() {
         <main className="banner relative md:pt-20">
             <Transition>
                 <div className="container max-w-6xl pt-20 font-outfit relative z-10">
-                    <div className="max-w-3xl mx-auto text-center pb-36">
+                    <div className="max-w-3xl mx-auto text-center pb-12">
                         <h1 className="sm:text-6xl text-5xl font-bold mb-6">Supercharged
                             <span>
                                 <TextTransition className='!inline-flex mx-2 text-blue-700' springConfig={presets.gentle}> {TEXTS[index % TEXTS.length]} </TextTransition>
@@ -34,7 +34,7 @@ export default function Banner() {
                             </div>
                         </form>
                     </div>
-                    <div className="grid md:mt-36 md:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-6 lg:hidden">
                         <div className="text-center mb-5">
                             <h4 className="font-semibold mb-3 text-2xl">Start</h4>
                             <p>Start Building Multiple sales channels to grow your audience</p>

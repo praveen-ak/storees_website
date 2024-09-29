@@ -240,13 +240,15 @@ input[name='panel']:checked~.accordion__content {
     background: #FFFCF5;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1020px) {
     .banner {
-        background: #FFFCF5 url("../../public/images/chart.png") no-repeat right;
+        background: #FFFCF5 url("../../public/images/chart.png") no-repeat center top 80%/75%;
+        min-height: 900px;
     }
 }
+
 .banner:after {
-    background: radial-gradient(circle, rgba(151, 151, 151, 0.5) 40%, rgba(151, 151, 151, 1) 75%), url(https://www.vhv.rs/dpng/f/11-110897_thin-plus-sign-transparent-hd-png-download.png) repeat 0 / 130px;
+    background: radial-gradient(circle, rgba(151, 151, 151, 0.5) 40%, rgb(252 250 243 / 90%) 75%), url("https://www.vhv.rs/dpng/f/11-110897_thin-plus-sign-transparent-hd-png-download.png") repeat 0 / 130px;
     content: "";
     position: absolute;
     top: 0;
@@ -286,4 +288,81 @@ input[name='panel']:checked~.accordion__content {
     transform: translateX(0);
     transition-delay: .25s;
     visibility: visible;
+}
+
+.growth_section::before {
+    content: url("../../public/images/arrow.svg");
+    position: absolute;
+    bottom: -53px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+    .growth_section::before {
+        transform: rotate(180deg);
+        bottom: -45px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .growth_section:first-child::after {
+        content: "";
+        position: absolute;
+        bottom: -43px;
+        width: 50%;
+        height: 5px;
+        left: -6px;
+        background-color: #FFFCF5;
+        z-index: 1;
+    }
+
+    .growth_section:last-child::after {
+        content: "";
+        position: absolute;
+        bottom: -43px;
+        width: 50%;
+        height: 5px;
+        right: -6px;
+        background-color: #FFFCF5;
+        z-index: 1;
+    }
+
+    .growth_section:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        bottom: -47px;
+        width: 12px;
+        height: 12px;
+        left: -18px;
+        background-color: #B8C2F9;
+        z-index: 1;
+        border-radius: 100%;
+    }
+
+    .growth_section:nth-child(3)::after {
+        content: "";
+        position: absolute;
+        bottom: -47px;
+        width: 12px;
+        height: 12px;
+        right: -18px;
+        background-color: #B8C2F9;
+        z-index: 1;
+        border-radius: 100%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .platform_data:before {
+        content: url(/_next/static/media/arrow.f36c4b87.svg);
+        position: absolute;
+        top: -54px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+        transform: rotate(180deg);
+    }
 }
