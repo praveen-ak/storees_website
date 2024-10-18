@@ -1,5 +1,7 @@
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
+import Lottie from "lottie-react";
+import animationData from "../../public/lottie/Cash-Flow.json";
 import Transition from './transition';
 
 const TEXTS = ['Ecommerce', 'Marketing', 'Executives'];
