@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
-import Transition from "./transition";
+import Transition from "../transition";
 import Lottie from "lottie-react";
-import ongoingData from "../../public/lottie/Ongoing-Orders.json";
-import processData from "../../public/lottie/order-process.json";
-import pastData from "../../public/lottie/past-order.json";
+import ongoingData from "../../../public/lottie/Ongoing-Orders.json";
+import processData from "../../../public/lottie/order-process.json";
+import pastData from "../../../public/lottie/past-order.json";
 
 export default function Marketing() {
     const [isorder, setisorder] = useState('ongoing')

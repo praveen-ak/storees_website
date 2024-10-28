@@ -1,17 +1,17 @@
 "use client";
 import Image from "next/image";
-import Banner from "@/components/banner";
-import Video from "@/components/video";
+import Banner from "@/components/home/banner";
+import Video from "@/components/home/video";
 import { Fragment } from "react";
-import Brand from "@/components/brand";
-import Accelerate from "@/components/accelerate";
-import Marketing from "@/components/marketing";
-import Calculate from "@/components/calculate";
-import TrustedBrand from "@/components/trustedBrand";
-import Scale from "@/components/scale";
-import Security from "@/components/security";
-import Strategy from "@/components/strategy";
-import Faq from "@/components/faq";
+import Brand from "@/components/home/brand";
+import Accelerate from "@/components/home/accelerate";
+import Marketing from "@/components/home/marketing";
+import Calculate from "@/components/home/calculate";
+import TrustedBrand from "@/components/home/trustedBrand";
+import Scale from "@/components/home/scale";
+import Security from "@/components/home/security";
+import Strategy from "@/components/home/strategy";
+import Faq from "@/components/home/faq";
 
 
 export default function Home() {

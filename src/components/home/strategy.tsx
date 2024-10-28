@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Transition from "./transition";
+import Transition from "../transition";
 
 export default function Strategy() {
     return (

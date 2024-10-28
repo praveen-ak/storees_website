@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import Transition from "./transition";
+import Transition from "../transition";
 
 export default function Brand() {
     const brand = [

@@ -1,7 +1,7 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
-import Transition from "./transition"
+import Transition from "../transition"
 
 export default function Faq() {
     const faqs = [{

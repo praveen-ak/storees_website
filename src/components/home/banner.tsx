@@ -1,8 +1,6 @@
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
-import Lottie from "lottie-react";
-import animationData from "../../public/lottie/Cash-Flow.json";
-import Transition from './transition';
+import Transition from '../transition';
 
 const TEXTS = ['Ecommerce', 'Marketing', 'Executives'];
 
@@ -17,7 +15,7 @@ export default function Banner() {
         return () => clearTimeout(intervalId);
     }, []);
     return (
-        <main className="banner relative md:pt-20">
+        <main className="banner chart relative md:pt-20">
             <Transition>
                 <div className="container max-w-6xl pt-20 font-outfit relative z-10">
                     <div className="max-w-3xl mx-auto text-center pb-12">
