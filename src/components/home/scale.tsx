@@ -1,4 +1,4 @@
-import Transition from "./transition"
+import Transition from "../transition"
 import Counter from "./counter"
 
 export default function Scale() {

@@ -1,7 +1,7 @@
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { useState } from 'react';
-import Transition from './transition';
+import Transition from '../transition';
 
 export default function Calculate() {
     const [revenue, setRevenue] = useState(0)

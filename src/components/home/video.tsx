@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Transition from "./transition";
+import Transition from "../transition";
 export default function Video() {
     const videoRef = useRef<HTMLVideoElement>(null)
     const [isplay, setisplay] = useState(false)
@@ -29,9 +29,9 @@ export default function Video() {
         setisplay(!isplay)
     }
     return (
-        <main className="bg-gradient-to-b from-[#faf8f0] from-50% to-zinc-100 to-15%">
+        <main className="bg-[#FFFCF5]">
             <Transition>
-                <div className="container max-w-5xl py-20">
+                <div className="container max-w-5xl pb-20">
                     <div className="relative" onMouseEnter={(e) => onHover(e)}
                         onMouseLeave={(e) => onHoverOver(e)}>
                         <video ref={videoRef} src={videosrc} className="rounded-2xl" onEnded={videoDone} />
@@ -39,7 +39,7 @@ export default function Video() {
                             {!isplay && <img src="../../images/play.png" alt="" className="mx-auto w-16 md:w-auto" />}
                             {isplay && hover && <div
                                 className="w-16 h-16 md:w-36 md:h-36 mx-auto flex flex-row items-center gap-2 justify-center bg-slate-400/85 rounded-full shadow-lg">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512"
                                     className="text-slate-200 w-4 h-4 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z">
