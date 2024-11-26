@@ -32,7 +32,7 @@ export default function Security() {
         <main className='bg-zinc-100 pb-20'>
             <Transition>
                 <div className="container max-w-6xl font-outfit overflow-hidden">
-                    <div className="grid md:grid-cols-2 gap-5 rounded-xl md:security relative text-white bg-gradient-to-tl from-blue-950 to-neutral-900">
+                    <div className="grid md:grid-cols-2 gap-5 rounded-xl security relative text-white bg-gradient-to-tl from-blue-950 to-neutral-900">
                         <div className="mb-5 px-10 py-10 w-full">
                             <h3 className="text-2xl mb-5">Security you can trust</h3>
                             <p className="text-md md:pb-40 mb-3">As a data company, we understand the importance of keeping your company's data secure.</p>

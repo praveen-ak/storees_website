@@ -2,6 +2,30 @@ import { MutableRefObject, useRef, useState } from "react";
 import Transition from "../transition";
 import Slider from "react-slick";
 
+function SampleNextArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style }}
+            onClick={onClick}>
+            <img src="../images/next_new.png" alt="" />
+        </div>
+    );
+}
+
+function SamplePrevArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style }}
+            onClick={onClick}
+        >
+            <img src="../images/prev_new.png" alt="" />
+        </div>
+    );
+}
 export default function Product() {
     const [slideIndex, setSlideIndex] = useState(0);
     let sliderRef = useRef(null) as any;
@@ -32,6 +56,8 @@ export default function Product() {
                 },
             }
         ],
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         beforeChange: (current: any, next: any) => setSlideIndex(next)
     };
     const reviews = [{

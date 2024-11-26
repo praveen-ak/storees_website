@@ -1,8 +1,31 @@
 import Transition from "../transition";
 import Slider from "react-slick";
+function SampleNextArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style }}
+            onClick={onClick}>
+            <img src="../images/next.png" alt="" />
+        </div>
+    );
+}
 
+function SamplePrevArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style }}
+            onClick={onClick}
+        >
+            <img src="../images/prev.png" alt="" />
+        </div>
+    );
+}
 export default function Powerful() {
-    var settings = {
+    let settings = {
         dots: false,
         infinite: true,
         speed: 500,
@@ -24,10 +47,12 @@ export default function Powerful() {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 },
             }
         ],
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
     let powerslide = [{
         image: "../images/gmail.png",

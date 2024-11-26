@@ -36,7 +36,7 @@ export default function Campaign() {
                     <div className="max-w-3xl mb-16 text-center font-outfit mx-auto">
                         <p className="uppercase text-sm mb-2">VISUAL WORKFLOW BUILDER</p>
                         <h2 className="mb-5 text-4xl font-bold">Simplify campaign execution</h2>
-                        <p className="text-xl mb-7">Build intricate, multi-step customer journeys with clarity. And, do it all without needing support from technical teams.</p>
+                        <p className="text-xl mb-7 font-poppins">Build intricate, multi-step customer journeys with clarity. And, do it all without needing support from technical teams.</p>
                     </div>
                     <div className="mb-0">
                         <div className="grid grid-cols-1 gap-6 max-w-5xl mx-auto">
