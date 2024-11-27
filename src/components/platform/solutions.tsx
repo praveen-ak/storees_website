@@ -17,7 +17,7 @@ export default function Solutions() {
                 </Transition>
             </div>
             <Transition>
-                <img src="../images/solution.png" alt="" />
+                <img src="../images/solution.png" className="w-full" alt="" />
             </Transition>
         </div>
     )

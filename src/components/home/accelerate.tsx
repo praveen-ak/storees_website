@@ -57,15 +57,15 @@ export default function Accelerate() {
                     <div className="max-w-3xl mb-16 text-center font-outfit mx-auto">
                         <p className="uppercase text-sm mb-2">Engage + Convert</p>
                         <h2 className="mb-5 text-4xl font-bold">Accelerate Revenue Growth</h2>
-                        <p className="text-xl mb-7">Power your business's growth through multiple channels, capture customer data and engage them with personalized notification.</p>
+                        <p className="text-xl mb-7 font-poppins">Power your business's growth through multiple channels, capture customer data and engage them with personalized notification.</p>
                     </div>
                     <div className="mb-10">
-                        <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-md-6 gap-lg-3 gap-xl-3">
                             {growth.map((item, index) => {
                                 return (
                                     <div key={index} className="growth_section mb-5 relative mx-auto">
                                         <div className="bg-white overflow-hidden group transition relative border rounded-md text-center p-6 pb-0 font-poppins" key={index}>
-                                            <button className="text-sm group-hover:bg-white group-hover:text-blue-600 transition-all rounded-md px-6 py-2 bg-blue-600 border-blue-600 border text-white mb-20">{item?.btn_name}</button>
+                                            <button className="text-sm group-hover:bg-white group-hover:text-blue-600 transition-all rounded-md px-6 py-2 bg-blue-600 border-blue-600 border text-white mb-20 transition-all">{item?.btn_name}</button>
                                             <div className="group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100 duration-700 absolute transition-all translate-x-72 -translate-y-11 opacity-0 text-sm mx-auto left-0 right-0 top-20">
                                                 <p>{item?.description}</p>
                                             </div>
@@ -86,9 +86,9 @@ export default function Accelerate() {
                         <div className="relative md:block hidden">
                             <hr className="mx-auto my-5" />
                         </div>
-                        <div className="my-10 platform_data relative font-poppins bg-slate-200/50 text-center max-w-5xl mx-auto p-10 rounded-xl">
+                        <div className="my-10 platform_data relative font-poppins bg-slate-200/50 text-center max-w-6xl mx-auto p-10 rounded-xl">
                             <button className=" hover:bg-white hover:text-blue-600 transition-all rounded-md px-6 py-2 bg-blue-600 border-blue-600 border text-white mb-10">Customer data platform</button>
-                            <h6 className="text-gray-800 mb-10 max-w-xl mx-auto text-lg">Adminpanel can be adjusted to suit your specific needs and can be enhanced with visuals, personalization, and mobile-friendly design. Would you like help with anything more specific for STOREES</h6>
+                            <h6 className="text-gray-800 mb-10 max-w-xl mx-auto text-lg">Adminpanel can be adjusted to suit your specific needs and can be enhanced with visuals, personalization, and mobile-friendly design. Would you like help with anything more specific for <span className="text-black font-medium">STOREES</span></h6>
                             <Lottie
                                 animationData={animationData}
                                 className="flex justify-center items-center"

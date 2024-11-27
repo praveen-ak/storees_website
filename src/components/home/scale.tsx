@@ -120,7 +120,8 @@ export default function Scale() {
                     <div className="grid md:grid-cols-2 gap-5">
                         <div className="mb-5 bg-gradient-to-tl from-blue-950 to-neutral-900 text-white rounded-xl px-10 py-14 text-center w-full">
                             <h3 className="font-bold text-3xl mb-5">You're in good company</h3>
-                            <p className="text-lg">Trusted by brands across industries, geographies and sizes, including those servicing both B2B and B2C markets.</p>
+                            <p className="text-lg mb-5">Trusted by brands across industries, geographies and sizes, including those servicing both B2B and B2C markets.</p>
+                            <img src="../images/cert.png" alt="" />
                         </div>
                         <div className="mb-5 bg-gradient-to-tl from-blue-950 to-neutral-900 text-white rounded-xl px-10 py-14 text-center w-full">
                             <h3 className="font-bold text-3xl mb-5">Integrate with your tools</h3>
